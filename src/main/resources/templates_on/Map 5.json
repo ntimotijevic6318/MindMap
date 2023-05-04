@@ -1,0 +1,48 @@
+{
+  "Elements": [
+    {
+      "filePath": "D:\\InteliJWork\\rm\\src\\main\\resources\\templates_on\\Map 5.json",
+      "Element type": "Concept",
+      "Element name": "s",
+      "Stroke size": 3,
+      "Element color": -1,
+      "Element position x": 114,
+      "Element position y": 74,
+      "Element width": 11,
+      "Element height": 22,
+      "Stroke color": -1855463,
+      "Text color": -16777216,
+      "Text size": 20,
+      "Family": "Arial"
+    },
+    {
+      "filePath": "D:\\InteliJWork\\rm\\src\\main\\resources\\templates_on\\Map 5.json",
+      "Element type": "Concept",
+      "Element name": "SFAS",
+      "Stroke size": 3,
+      "Element color": -1,
+      "Element position x": 198,
+      "Element position y": 55,
+      "Element width": 26,
+      "Element height": 11,
+      "Stroke color": -1855463,
+      "Text color": -16777216,
+      "Text size": 10,
+      "Family": "Arial"
+    },
+    {
+      "filePath": "D:\\InteliJWork\\rm\\src\\main\\resources\\templates_on\\Map 5.json",
+      "Element type": "Link",
+      "Element name": "s - SFAS",
+      "From": 54686630,
+      "To": 1068822768,
+      "Stroke size": 3,
+      "Element color": -6745050,
+      "Stroke color": -14336,
+      "Link startPos x": 116,
+      "Link startPos y": 89,
+      "Link endPos x": 224,
+      "Link endPos y": 66
+    }
+  ]
+}
