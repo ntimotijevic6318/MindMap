@@ -11,7 +11,7 @@
 
 
 
-## **Snimak aplikacije** : [MindMap](https://user-images.githubusercontent.com/72966266/236627818-4b7ed6dd-9468-4bdb-8cce-aa258ba4e90f.mp4)
+## **Snimak aplikacije** : [MindMap](https://user-images.githubusercontent.com/72966266/236627818-4b7ed6dd-9468-4bdb-8cce-aa258ba4e90f.mp4).
 
 ***Spisak korišćenih patterna***:
 + Singleton(Main Frame)
