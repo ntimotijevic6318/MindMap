@@ -1,6 +1,6 @@
 package dsw.rudok.app.core.errhandler;
 
-public class ConsoleLogger implements ErrorLogger{
+public class ConsoleLogger implements ErrorLogger {
 
     MessageGenerator messageGenerator;
 
@@ -17,6 +17,7 @@ public class ConsoleLogger implements ErrorLogger{
     @Override
     public void update(Object notification) {
         Message message = (Message) notification;
+        if(message.getType().name().equals(MessageType.ERROR.name()))
         log(message);
     }
 

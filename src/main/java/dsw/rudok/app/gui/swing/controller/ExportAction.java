@@ -41,8 +41,9 @@ public class ExportAction extends AbstractRudokAction {
         BufferedImage bImg = new BufferedImage(mapView.getWidth(), mapView.getHeight(), BufferedImage.TYPE_INT_RGB);
         Graphics2D cg = bImg.createGraphics();
         mapView.paintAll(cg);
+
         try {
-            if (ImageIO.write(bImg, "png", new File("D:\\InteliJWork\\rm\\src\\main\\resources\\templates" , mapView.getMap().getName() + ".png")))
+            if (ImageIO.write(bImg, "png", new File("src/main/resources/templates" , mapView.getMap().getName() + ".png")))
             {
                 ApplicationFramework.getInstance().getMessageGenerator().generate(EventType.PNG_CREATED) ;
             }

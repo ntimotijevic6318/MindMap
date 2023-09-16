@@ -44,7 +44,7 @@ public class TemplateSaveAsAction extends AbstractRudokAction{
         Map map = (Map) MainFrame.getInstance().getMapTree().getSelectedNode().getMapNode();
         File mapFile = null;
 
-        jfc.setSelectedFile(new File(map.getName() + ".json"));
+        jfc.setSelectedFile(new File(""  + map.getName() + ".json"));
 
 
         if (map.getFilePath() == null || map.getFilePath().isEmpty()) {
@@ -57,6 +57,5 @@ public class TemplateSaveAsAction extends AbstractRudokAction{
         }
 
         ApplicationFramework.getInstance().getSerializer().saveMap(map);
-        //MainFrame.getInstance().getActionManager().getExportAction().actionPerformed(e);
     }
 }

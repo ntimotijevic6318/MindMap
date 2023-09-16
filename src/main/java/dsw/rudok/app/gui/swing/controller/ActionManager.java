@@ -24,7 +24,7 @@ public class ActionManager {
     private SelectionAction selectionAction;
     private RemoveAction removeAction;
     private MoveAction moveAction;
-    private ModifyAction modifyAction;
+
 
     private SaveAction saveAction;
     private SaveAsAction saveAsAction;
@@ -51,7 +51,6 @@ public class ActionManager {
         selectionAction = new SelectionAction();
         removeAction = new RemoveAction();
         moveAction = new MoveAction();
-        modifyAction = new ModifyAction();
 
         saveAction  = new SaveAction();
         saveAsAction = new SaveAsAction();

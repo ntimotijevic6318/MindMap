@@ -33,7 +33,6 @@ public class StateManager {
         selectionState = new SelectionState();
         removeState = new RemoveState();
         moveState = new MoveState();
-
         zoomSate = new ZoomState();
 
     }

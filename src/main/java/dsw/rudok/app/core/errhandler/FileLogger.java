@@ -2,6 +2,7 @@ package dsw.rudok.app.core.errhandler;
 
 import java.io.*;
 
+
 public class FileLogger implements ErrorLogger {
 
     MessageGenerator messageGenerator;
@@ -17,17 +18,18 @@ public class FileLogger implements ErrorLogger {
 
         try{
 
+
         if(alredyCreated == false){
-            File file = new File("D:\\InteliJWork\\rm\\src\\main\\resources\\log.txt");
+            File file = new File("src/main/resources/log.txt");
             file.createNewFile();
             alredyCreated = true;
         }
+
         Writer output;
-        output = new BufferedWriter(new FileWriter("D:\\InteliJWork\\rm\\src\\main\\resources\\log.txt" , true));  //clears file every time
+        output = new BufferedWriter(new FileWriter("src/main/resources/log.txt" , true));  //clears file every time
             output.append("[" + message.getType().name() + "]" + " " + message.getTimestamp() + " "  + "[" + message.getContent() + "]");
             output.append("\n") ;
             output.close();
-
 
         } catch (IOException e) {
             throw new RuntimeException(e);
@@ -38,6 +40,7 @@ public class FileLogger implements ErrorLogger {
     @Override
     public void update(Object notification) {
         Message message = (Message) notification;
+        if(message.getType().name().equals(MessageType.ERROR.name()))
         log(message);
     }
 }

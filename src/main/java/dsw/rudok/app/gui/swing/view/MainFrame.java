@@ -55,7 +55,7 @@ public class MainFrame extends JFrame implements ISubscriber {
         setSize(screenWidth / 2, screenHeight / 2);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setTitle("RuDok app");
+        setTitle("Gerumap");
 
         menu = new MyMenuBar();
         setJMenuBar(menu);
@@ -76,7 +76,6 @@ public class MainFrame extends JFrame implements ISubscriber {
             public void componentResized(ComponentEvent e) {
                 MainFrame.getInstance().revalidate();
                 MainFrame.getInstance().repaint();
-
             }
 
             @Override
@@ -86,7 +85,7 @@ public class MainFrame extends JFrame implements ISubscriber {
 
             @Override
             public void componentShown(ComponentEvent e) {
-            ApplicationFramework.getInstance().getMessageGenerator().generate(EventType.WARNING);
+
             }
 
             @Override
@@ -95,15 +94,10 @@ public class MainFrame extends JFrame implements ISubscriber {
             }
         });
 
-
-
-
-
-
-
         scroll.setMinimumSize(new Dimension(200,150));
         ProjectExplorerView projectExplorerView = ProjectExplorerView.getInstance();
-        jSplitPane =new JSplitPane(JSplitPane.HORIZONTAL_SPLIT,scroll, ProjectExplorerView.getInstance());
+
+        jSplitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, scroll, ProjectExplorerView.getInstance());
         getContentPane().add(jSplitPane,BorderLayout.CENTER);
         jSplitPane.setDividerLocation(250);
         jSplitPane.setOneTouchExpandable(true);

@@ -56,8 +56,6 @@ public class MapAdapter extends TypeAdapter<Map> {
              writer.name("Link endPos y").value(((Link) e).getDestinationPosition().y);
          }
 
-
-
          writer.endObject();
      }
 

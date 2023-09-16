@@ -39,8 +39,6 @@ public class SwingGui implements Gui {
     @Override
     public void enableRedoAction() {
         MainFrame.getInstance().getActionManager().getRedoAction().setEnabled(true);
-
-
     }
     @Override
     public void enableUndoAction() {

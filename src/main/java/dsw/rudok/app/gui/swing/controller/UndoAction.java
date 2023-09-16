@@ -1,6 +1,6 @@
 package dsw.rudok.app.gui.swing.controller;
 
-import dsw.rudok.app.core.ApplicationFramework;
+
 import dsw.rudok.app.gui.swing.view.MapView;
 import dsw.rudok.app.gui.swing.view.ProjectExplorerView;
 
